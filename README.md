@@ -7,5 +7,7 @@ Categorized Lists: Organize items into categories like "Produce," "Dairy," "Grai
 Persistent Storage: Save your list in your browser's local storage so your list is accessible even after you close the app.
 Responsive Design: Works seamlessly on both desktop and mobile devices.
 Fresh Themes: Choose from multiple color themes for a customizable look.
+
+
 Demo
 Live Demo
