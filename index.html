@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery List</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="C:\Users\Hp\Desktop\mini.html\Grey Simple Business Corporate LinkedIn Banner.png" alt="Supermarket" class="supermarket-image">
+        <h1>Grocery List</h1>
+        <input type="text" id="product-input" placeholder="Enter product name">
+        
+        <select id="category-select">
+            <option value="vegetables">Vegetables</option>
+            <option value="fruits">Fruits</option>
+            <option value="drinks">Drinks</option>
+            <option value="snacks">Snacks</option>
+            <option value="groceries">Grocery Items</option>
+        </select>
+
+        <input type="number" id="quantity-input" placeholder="Quantity" min="0" step="any">
+        <select id="unit-select">
+            <option value="kg">Kilograms</option>
+            <option value="g">Grams</option>
+            <option value="l">Liters</option>
+            <option value="pcs">Pieces</option>
+        </select>
+
+        <input type="number" id="price-input" placeholder="Price per unit" min="0" step="any">
+        
+        <button id="add-button">Add to List</button>
+
+        <h2>Grocery Items</h2>
+
+        <!-- Separate sections for each category -->
+        <div id="vegetables-section">
+            <h3>Vegetables</h3>
+            <ul id="vegetables-list"></ul>
+        </div>
+
+        <div id="fruits-section">
+            <h3>Fruits</h3>
+            <ul id="fruits-list"></ul>
+        </div>
+
+        <div id="drinks-section">
+            <h3>Drinks</h3>
+            <ul id="drinks-list"></ul>
+        </div>
+
+        <div id="snacks-section">
+            <h3>Snacks</h3>
+            <ul id="snacks-list"></ul>
+        </div>
+
+        <div id="groceries-section">
+            <h3>Grocery Items</h3>
+            <ul id="groceries-list"></ul>
+        </div>
+
+        <h3 id="total-price">Total Price: $0.00</h3>
+
+        <canvas id="grocery-chart" width="400" height="200"></canvas>
+        
+        <center>
+            <a href="https://www.bigbasket.com/">
+                <img src="C:\Users\Hp\Desktop\mini.html\images.png" alt="Shopping Trolley" class="trolley-image">
+                <button>BUY</button>
+            </a>
+        </center>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
